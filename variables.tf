@@ -157,6 +157,12 @@ variable "alb_target_group_alarms_insufficient_data_actions" {
   default     = []
 }
 
+variable "alb_target_group_arn" {
+  type        = "string"
+  description = "ALB target group ARN, if this is an empty string a new one will be generated"
+  default     = ""
+}
+
 variable "alb_name" {
   type        = "string"
   description = "Name of the ALB for the Target Group."

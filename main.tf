@@ -25,6 +25,7 @@ module "alb_ingress" {
   stage               = "${var.stage}"
   attributes          = "${var.attributes}"
   vpc_id              = "${var.vpc_id}"
+  target_group_arn    = "${var.alb_target_group_arn}"
   listener_arns       = ["${var.listener_arns}"]
   listener_arns_count = "${var.listener_arns_count}"
   health_check_path   = "${var.alb_ingress_healthcheck_path}"
