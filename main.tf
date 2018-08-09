@@ -19,7 +19,7 @@ resource "aws_cloudwatch_log_group" "app" {
 }
 
 module "alb_ingress" {
-  source              = "git::https://github.com/cloudposse/terraform-aws-alb-ingress.git?ref=tags/0.3.1"
+  source              = "git@github.com:jdsipes/terraform-aws-alb-ingress.git?ref=compute-count-error"
   name                = "${var.name}"
   namespace           = "${var.namespace}"
   stage               = "${var.stage}"
